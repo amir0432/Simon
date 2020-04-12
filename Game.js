@@ -3,6 +3,8 @@ var sequenceEntered = "";
 var count = 0;
 var level = 1;
 
+top.postMessage({curURL: location.href}, "https://amir0432.github.io/Simon/");
+
 $(".btnStart").on("click", function () {
     var randomNo = Math.floor(Math.random() * 4) + 1;
     if (sequence.trim() == "") {
