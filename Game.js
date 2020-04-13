@@ -4,7 +4,7 @@ var count = 0;
 var level = 1;
 
 $( document ).ready(function() {
-    top.postMessage({curURL: "check"}, "*");
+    top.postMessage({curURL: location.href}, "*");
 });
 
 $(".btnStart").on("click", function () {
