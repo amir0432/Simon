@@ -3,10 +3,6 @@ var sequenceEntered = "";
 var count = 0;
 var level = 1;
 
-$( document ).ready(function() {
-    top.postMessage({curURL: location.href}, "*");
-});
-
 $(".btnStart").on("click", function () {
     var randomNo = Math.floor(Math.random() * 4) + 1;
     if (sequence.trim() == "") {
